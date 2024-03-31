@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+.banner-about  {
+    height: 130vh;
+    object-fit: contain;
+    background-position: center;
+    background-size: cover;
+    background-image: url('./images/img.jpg');
+    position: relative;
+}
+
+.about-text{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+}
+.about-para{
+    display: flex;
+    flex-direction: column;
+  row-gap: 2rem;
+}
+.about-para .about-title h2{
+    color: #FFB000;
+    text-shadow: 0px 0px 8px #000000;
+    text-transform: capitalize;
+font-weight: 500;
+font-size: 2.5rem;
+}
+.about-para .about-para-text{
+    letter-spacing: 1px ;
+    line-height: 1.5rem;
+    color: #f7f8f9;
+  
+}
+@media screen and (max-width:768px) {
+
+    .about-para .about-title h2{
+font-size: 1.3rem;
+}
+.about-para .about-para-text p{
+ font-size: 0.8rem;
+  
+}
+}

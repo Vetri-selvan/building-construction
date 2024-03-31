@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.banner-service{
+   height: 100vh;
+    object-fit: contain;
+    background-position: center;
+    background-size: cover;
+    background-image: url('./images/img.jpg');
+
+}
+.service {
+    margin-top: 10%;
+}
+.service .container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+       
+}
+.service .container p{
+    color: #f8f9f0;
+    text-transform: capitalize;
+    font-size: 20px;
+   margin-top: 30px;
+   text-shadow: 0px 0px 10px #000000;
+   font-weight: 500;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer   ;
+}
+.service .container p:hover{
+    color: #FDA403;
+}
+.service .container .left-box h2{
+ background-color: #FAF5E4;
+ padding: 20px 50px;
+ border-top-right-radius: 30px;
+ border-bottom-right-radius: 30px;
+ text-transform: capitalize;
+}
+/*  */
+.service .container .left-box{
+display: flex;
+align-items: center;
+gap: 2rem;
+width: 300px;
+
+
+
+}
+.service .container .img-box img{
+height: 50px;
+width: 50px;
+}
+/*  */
+.service .container .right-box{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    width: 300px;
+    
+}
+@media screen and (max-width: 767px) {
+    .banner-service{
+      height: 110vh;
+        
+     
+     }
+    .service .container{
+        display: flex;
+       flex-direction: column;
+           
+    }
+    .service .container p{
+        font-size: 12px;
+    }
+    .service .container .left-box h2{
+       font-size: 1.5rem;
+        padding: 5px 10px;
+       
+       }
+
+    
+}
+
